@@ -199,10 +199,11 @@ img {
   overflow: hidden;
   opacity: 0;
 }
+
 .priorities {
   background-color: #FFFFFF;
 }
-.priopitet-list {
+.priorities-list {
   display: flex;
 }
 .thumb {
@@ -233,7 +234,7 @@ img {
   color: var(--color-text-two);
   width: 270px;
 }
-.prioritet-item:not(:last-child) {
+.priorities-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -273,6 +274,8 @@ img {
   padding-bottom: 27px;
   bottom: 0;
 }
+
+
 .team-list {
   display: flex;
 }
@@ -340,6 +343,8 @@ img {
   background-color: var(--brand-color);
   fill: #FFFFFF;
 }
+
+
 .clients {
   background-color: #ffffff;
 }
