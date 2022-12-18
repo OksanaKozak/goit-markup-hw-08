@@ -1,4 +1,4 @@
-.top {
+.hero {
     max-width: 1600px;
     text-align: center;
     padding-top: 200px;
@@ -10,10 +10,8 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  .top-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+.hero-title {
+  @include font(44px, 900, 1.36, 0.06em); 
     color: #ffffff;
     margin-bottom: 30px;
   }

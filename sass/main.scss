@@ -1,15 +1,19 @@
 @import "./utils/variables";
+@import "./utils/mixin";
 @import "./base/reset";
 @import "./base/hidden";
 @import "./components/page-header";
 @import "./components/logo";
 @import "./components/button";
-@import "./components/footer";
+@import "./components/footer/soc";
+@import "./components/footer/contacts";
+@import "./components/footer/form";
+@import "./components/society";
 @import "./layouts/hero";
 @import "./layouts/priorities";
 @import "./layouts/work";
 @import "./layouts/team";
-@import "./layouts/society";
 @import "./layouts/clients";
+@import "./layouts/modal";
 
 

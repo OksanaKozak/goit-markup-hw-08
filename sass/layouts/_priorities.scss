@@ -1,23 +1,18 @@
 .priorities {
     background-color: #FFFFFF;
-    &-list {
+    &__list {
         display: flex;
       }
-      &-title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
+      &__title {
+        @include font(14px, 700, 1.14, 0.03em); 
         margin-bottom: 10px;
       }
-      &-text {
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
+      &__text {
+        @include font(14px, 400, 1.71, 0.03em); 
         color: var(--color-text-two);
         width: 270px;
       }
-      &-item:not(:last-child) {
+      &__item:not(:last-child) {
         margin-right: 30px;
     }
 }

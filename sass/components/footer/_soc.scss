@@ -1,0 +1,23 @@
+.soc-container {
+    padding-top: 72px;
+  }
+h4 {
+    font-style: normal;
+    @include font(14px, 700, 1.14, 0.03em); 
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+.footer-soc-list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+.footer-soc-icons {
+    fill: #FFFFFF;
+  }
+.footer-soc-link {
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

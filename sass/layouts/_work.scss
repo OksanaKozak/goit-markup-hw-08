@@ -1,29 +1,23 @@
 .work {
     background-color: #FFFFFF;
-    &-list {
+    &__list {
         display: flex;
       }
-      &-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
+      &__title {
+        @include font(36px, 700, 1.17, 0.03em); 
         text-align: center;
         margin-bottom: 50px;
       }
-      &-thumb {
+      &__thumb {
         position: relative;
       }
-      &-text-modal {
+      &__text {
         position: absolute;
         width: 370px;
         height: 70px;
         background: rgba(47, 48, 58, 0.8);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
+        @include font(14px, 700, 1.14, 0.03em); 
         text-align: center;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #FFFFFF;
         padding-top: 27px;
@@ -31,7 +25,7 @@
         bottom: 0;
       }
 }
-.work-list .work-img + .work-img {
+.work__list .work__img + .work__img {
     margin-left: 30px;
 }
 
