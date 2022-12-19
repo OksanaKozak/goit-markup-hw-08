@@ -1,0 +1,37 @@
+.portfolio {
+    background-color: #ffffff;
+  }
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+   }
+.filter .button-filter {
+    margin-right: 8px;
+  }
+.filter .button-filter:last-child {
+    margin: 0;
+  }
+.button-filter {
+    display: inline-block;
+    background: #F5F4FA;
+    border-radius: 4px;
+  }
+  .button-filter__btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: var(--brand-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
