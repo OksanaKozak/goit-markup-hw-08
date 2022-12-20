@@ -6,8 +6,7 @@ h4 {
     @include font(14px, 700, 1.14, 0.03em); 
     text-transform: uppercase;
     color: #FFFFFF;
-    padding-top: 0;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .social__list {
     display: flex;
@@ -17,7 +16,6 @@ h4 {
 .social__item {
   width: 44px;
   height: 44px;
-  margin-bottom: 30px;
 }
 .social__item:not(:last-child) {
   margin-right: 10px;
