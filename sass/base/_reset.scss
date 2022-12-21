@@ -19,16 +19,27 @@
     list-style: none;
   }
   .container {
-    width: 1200px;
+    width: 100%;
     padding: 0px 15px;
     margin: 0px auto;
+    @media screen and (min-width:480px) {
+      width: 450px;
+    }
+    @media screen and (min-width:768px) {
+      width: 738px;
+    }
+    @media screen and (min-width:1200px) {
+      width: 1170px;
+    }
   }
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   img {
     display: block;
+    width: 100%;
+    height: auto;
   }
   .button {
     cursor: pointer;

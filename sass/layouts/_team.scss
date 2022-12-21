@@ -1,5 +1,6 @@
 .team__list {
     display: flex;
+    flex-wrap: wrap;
     margin-right: 30px;
     & .team__itam:last-child {
         margin: 0;
