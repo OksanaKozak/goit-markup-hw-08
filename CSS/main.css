@@ -477,7 +477,7 @@ h4 {
 .social-list__items {
   width: 44px;
   height: 44px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 .social-list__items:not(:last-child) {
   margin-right: 10px;
@@ -538,8 +538,6 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 .priorities__title {
   font-size: 14px;
@@ -547,6 +545,7 @@ h4 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  text-align: center;
 }
 .priorities__text {
   font-size: 14px;
@@ -556,18 +555,24 @@ h4 {
   color: var(--color-text-two);
   width: 100%;
 }
-.priorities__item {
-  margin-right: 30px;
+.priorities__item:not(:last-child) {
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .priorities__item {
     width: calc((100% - 60px) / 2);
+  }
+  .priorities__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .priorities__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .priorities__item {
     width: calc((100% - 120px) / 4);
+    margin-bottom: 0;
   }
 }
 
@@ -587,8 +592,21 @@ h4 {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.thumb:last-child {
-  margin: 0;
+
+.work {
+  display: none;
+}
+
+.visualli-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
 }
 
 .work {
@@ -636,27 +654,45 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: 30px;
-}
-.team__list .team__itam:last-child {
-  margin: 0;
 }
 
 .team__itam {
-  margin-right: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
+.team__itam:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__itam {
+    width: calc((100% - 60px) / 2);
+  }
+  .team__itam:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .team__itam:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__itam {
+    width: calc((100% - 120px) / 4);
+    margin-bottom: 0px;
+  }
+  .team__itam:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 
 .team__title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team__name {
@@ -673,11 +709,8 @@ h4 {
   font-weight: 400;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
   color: var(--color-text-two);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
@@ -685,22 +718,43 @@ h4 {
   background-color: #ffffff;
 }
 .clients__title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .clients__items {
-  width: 170px;
+  width: 100%;
   height: 92px;
   fill: currentColor;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 450px) {
+  .clients__items {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__items {
+    width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__items {
+    width: calc((100% - 180px) / 6);
+  }
 }
 .clients__link {
   width: 100%;
@@ -719,9 +773,6 @@ h4 {
   border-radius: 4px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__items:not(:last-child) {
-  margin-right: 30px;
 }
 .clients__link:hover, .clients__link:focus {
   border-color: var(--brand-color);
