@@ -1,8 +1,8 @@
 .hero {
     max-width: 1600px;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
     background-image: url('../images/hero-min.jpg'), url('..//images/Bg.png');
@@ -11,7 +11,7 @@
     background-position: center;
   }
 .hero-title {
-  @include font(44px, 900, 1.36, 0.06em); 
+  @include font(26px, 900, 1.36, 0.06em); 
     color: #ffffff;
     margin-bottom: 30px;
   }
