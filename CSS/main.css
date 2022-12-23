@@ -530,6 +530,7 @@ h4 {
 }
 
 .priorities {
+  text-align: center;
   background-color: #FFFFFF;
 }
 .priorities__list {
@@ -538,6 +539,7 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
 }
 .priorities__title {
   font-size: 14px;
@@ -545,7 +547,6 @@ h4 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-  text-align: center;
 }
 .priorities__text {
   font-size: 14px;
@@ -554,25 +555,19 @@ h4 {
   letter-spacing: 0.03em;
   color: var(--color-text-two);
   width: 100%;
+  text-align: left;
 }
-.priorities__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .priorities__item {
-    width: calc((100% - 60px) / 2);
-  }
-  .priorities__item:nth-child(2n+1) {
-    margin-right: 30px;
-  }
-  .priorities__item:not(:nth-last-child(-n+2)) {
-    margin-bottom: 30px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
   .priorities__item {
-    width: calc((100% - 120px) / 4);
-    margin-bottom: 0;
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
   }
 }
 
