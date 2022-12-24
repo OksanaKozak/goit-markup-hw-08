@@ -5,13 +5,40 @@
     padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('../images/hero-min.jpg'), url('..//images/Bg.png');
-    background-size: 1600px 600px;
+    background-image: url('..//../images/hero_tel.jpg'), url('..//../images/Bg.png');
+    @include retina {
+      background-image: url('..//../images/hero_tel-2x.jpg'), url('..//../images/Bg.png');
+      background-size: 480px 400px;
+    }
+   
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width:768px) {
+      background-image: url('..//../images/hero_tablet.jpg'), url('..//../images/Bg.png');
+      background-size: 768px 400px;
+    @include retina {
+      background-image: url('..//../images/hero_tablet-2x.jpg'), url('..//../images/Bg.png');
+  
+    }
+  }
+
+    @media screen and (min-width:1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: url('..//../images/hero-min.jpg'), url('..//../images/Bg.png');
+      background-size: 1600px 600px;
+      @include retina {
+        background-image: url('..//../images/hero-min-2x.jpg'), url('..//../images/Bg.png');
+      
+      }
+      }
   }
 .hero-title {
   @include font(26px, 900, 1.36, 0.06em); 
     color: #ffffff;
     margin-bottom: 30px;
+    @media screen and (min-width:1200px) {
+      @include font(44px, 900, 1.36, 0.06em);
+      }
   }
