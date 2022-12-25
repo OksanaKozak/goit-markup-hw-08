@@ -10,15 +10,15 @@
     &__list {
         display: flex;
       }
-      &__title {
+    &__title {
         @include font(36px, 700, 1.17, 0.03em); 
         text-align: center;
         margin-bottom: 50px;
       }
-      &__thumb {
+    &__thumb {
         position: relative;
       }
-      &__text {
+    &__text {
         position: absolute;
         width: 370px;
         background: rgba(47, 48, 58, 0.8);
