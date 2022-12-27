@@ -1,5 +1,6 @@
 .contacts {
     display: flex;
+    flex-wrap: wrap;
     background-color: #2F303A;
     margin-left: auto;
     margin-right: auto;
@@ -43,7 +44,6 @@
 .contacts__mail,
 .contacts__tel {
   display: flex;
-  align-items: center;
   justify-content: center;
   @include font(14px, 400, 1.71, 0.03em); 
     color: rgba(255, 255, 255, 0.6);
