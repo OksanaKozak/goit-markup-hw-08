@@ -1,6 +1,10 @@
 .social {
-  margin: 72px 93px 100px 0px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
 h4 {
     font-style: normal;
     @include font(14px, 700, 1.14, 0.03em); 
