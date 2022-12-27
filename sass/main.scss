@@ -1,7 +1,9 @@
 @import "./utils/variables";
 @import "./utils/mixin";
+
 @import "./base/reset";
 @import "./base/hidden";
+
 @import "./components/page-header";
 @import "./components/logo";
 @import "./components/button";
@@ -9,13 +11,15 @@
 @import "./components/footer/contacts";
 @import "./components/footer/form";
 @import "./components/society";
+
 @import "./layouts/hero";
 @import "./layouts/priorities";
 @import "./layouts/work";
 @import "./layouts/team";
 @import "./layouts/clients";
 @import "./layouts/modal";
-@import "./layouts/portfolio/header";
+
+
 @import "./layouts/portfolio/filter";
 @import "./layouts/portfolio/portfolio";
 @import "./layouts/portfolio/contacts";

@@ -1,11 +1,20 @@
 .logo {
     display: block;
     font-family: "Raleway", sans-serif;
-    @include font(26px, 700, 1.19, 0.03em); 
+    @include font(24px, 700, 1.19, 0.03em); 
     color: #000000;
     text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media (min-width: 768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    @media (min-width: 1200px) {
+        @include font(26px, 700, 1.19, 0.03em); 
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 .accent {
     color: var(--brand-color)
