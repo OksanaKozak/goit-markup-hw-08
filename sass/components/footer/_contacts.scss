@@ -1,25 +1,26 @@
 .contacts {
     background-color: #2F303A;
-    padding: 60px 0px 60px 0px;
+    padding: 60px 0;
     &__container {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-     
+      text-align: center;
       @media screen and (min-width: 768px) {
-        display: inline-flex;
-       padding-left: 60px;
-       padding-right: 160px;
+        margin-right: 160px;
       }
       @media screen and (min-width: 1200px) {
-        display: inline-flex;
-      padding: 0;
-      align-items: flex-start;
-   
+        text-align: left;
+        margin-right: 0px;
       }
     }
-   }
-
+}
+.footer__wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    }
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
 .logo-contacts {
     font-family: "Raleway", sans-serif;
     @include font(26px, 700, 1.19, 0.03em); 
@@ -42,15 +43,11 @@
 }
 .contacts__container__List {
   @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
   padding: 0;
-  align-items: flex-start;
-
   }
 }
 .contacts__item {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   &:last-child {
     padding-bottom: 0;
   }
@@ -59,8 +56,6 @@
 
 .contacts__mail,
 .contacts__tel {
-  display: flex;
-  justify-content: center;
   @include font(14px, 400, 1.71, 0.03em); 
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
