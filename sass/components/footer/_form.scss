@@ -4,7 +4,13 @@
   align-items: center;
   justify-content: center;
   padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    padding: 0;
+    align-items: flex-start;
+  }
 }
+
 .newsletter__input {
     width: 358px;
     height: 50px;
@@ -24,6 +30,7 @@
     @include font(16px, 400, 1.25, 0.03em); 
     color: rgba(255, 255, 255, 0.6);
   }
+
 .newsletter__button {
     font-family: inherit;
     @include font(16px, 700, 1.87, 0.06em); 
@@ -36,9 +43,13 @@
     display: flex;
     align-items: center;
     padding-left: 28px;
-    margin: 0px auto 60px auto;
+    margin: 0px auto 0px auto;
     width: 200px;
     height: 50px;
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+      
+    }
   }
 .newsletter__svg {
     fill: #FFFFFF;

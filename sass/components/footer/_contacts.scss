@@ -1,15 +1,21 @@
 .contacts {
-    display: flex;
-    flex-wrap: wrap;
     background-color: #2F303A;
-    margin-left: auto;
-    margin-right: auto;
-
     &__container {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      padding-top: 60px;
+      flex-direction: column;
+     
+      @media screen and (min-width: 768px) {
+        display: inline-flex;
+       padding-left: 60px;
+       padding-right: 160px;
+      }
+      @media screen and (min-width: 1200px) {
+        display: inline-flex;
+      padding: 0;
+      align-items: flex-start;
+   
+      }
     }
    }
 
@@ -25,20 +31,29 @@
     color: var(--brand-color);
    }
 .contacts__address {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 230px;
+
     @include font(14px, 400, 1.71, 0.03em); 
     color: #FFFFFF;
     text-decoration: none;
     font-style: normal;
+    width: 232px;
+
+}
+.contacts__container__List {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  padding: 0;
+  align-items: flex-start;
+
+  }
 }
 .contacts__item {
   padding-bottom: 9px;
   &:last-child {
     padding-bottom: 0;
   }
+
 }
 
 .contacts__mail,
