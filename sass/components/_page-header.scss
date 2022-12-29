@@ -1,24 +1,15 @@
 .page-header {
     position: relative;
+    display: inline-flex;
+    align-items: center;
     border-bottom: 1px solid #ECECEC;
     background-color: #fff;
-    width: 480px;
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        height: 80px;
-    } 
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-        height: 80px;
-    } 
+
 }
 
 .page-header__nav {
     display: inline-flex;
-    
+    align-items: center;
 }
 .page-header__nav__list{
   display: none;
@@ -60,12 +51,14 @@
     display: none;
       
     @media screen and (min-width: 768px) {
-        display: inline-block;
+        display: inline-flex;
         margin-left: 80px;
-      
+        flex-direction: column;
+     
         }
     @media screen and (min-width: 1200px) {
         display: inline-flex;
+        flex-direction: row;
         margin-left: 268px;
         }
 }
