@@ -35,7 +35,6 @@ ul {
 }
 
 .container {
-  width: 100%;
   padding: 0px 15px 0px 15px;
   margin: 0px auto;
 }
@@ -90,14 +89,17 @@ img {
 
 .page-header {
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border-bottom: 1px solid #ECECEC;
+  background-color: #fff;
+}
+
+.page-header__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ECECEC;
-  background-color: #fff;
 }
 
 .page-header__nav {
@@ -219,7 +221,24 @@ img {
   color: var(--brand-color);
 }
 
+.mob-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 48px;
+  padding-left: 40px;
+}
+
 .mob-menu {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -239,15 +258,10 @@ img {
           transform: translateX(0);
 }
 
-.container {
-  display: block;
-  height: 100%;
-}
-
 .page-header__menu-btn {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 0px;
+  top: 0px;
   padding-top: 10px;
   padding-right: 15px;
   fill: "currentColor";
@@ -262,7 +276,8 @@ img {
 
 .mob-menu-svg {
   position: absolute;
-  right: 23px;
+  top: 10px;
+  right: 15px;
   background-color: #ffffff;
   border: none;
 }
@@ -323,22 +338,6 @@ img {
 }
 .mob-menu__social-list__items:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.mob-menu-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 48px;
-  padding-left: 40px;
 }
 
 .logo {
